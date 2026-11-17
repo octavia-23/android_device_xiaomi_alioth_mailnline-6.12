@@ -19,6 +19,9 @@ TARGET_SCREEN_DENSITY := 440
 TARGET_KERNEL_CONFIG := alioth_defconfig
 BOARD_KERNEL_CMDLINE += alioth.ro_parts=modemst1,modemst2,fsg,fsc
 
+# Sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := alioth,aliothin
 
