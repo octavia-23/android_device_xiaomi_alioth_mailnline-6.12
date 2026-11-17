@@ -19,8 +19,9 @@ TARGET_SCREEN_DENSITY := 440
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_alioth
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_alioth
 
-# Kernel (inherits alioth_defconfig from sm8250-common)
-# TARGET_KERNEL_CONFIG += vendor/xiaomi/alioth.config
+# Kernel
+TARGET_KERNEL_CONFIG := alioth_defconfig
+BOARD_KERNEL_CMDLINE += alioth.ro_parts=modemst1,modemst2,fsg,fsc
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := alioth,aliothin
