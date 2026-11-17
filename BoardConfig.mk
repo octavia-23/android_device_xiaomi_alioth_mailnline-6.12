@@ -15,8 +15,9 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 # Display
 TARGET_SCREEN_DENSITY := 440
 
-# Kernel (inherits alioth_defconfig from sm8250-common)
-# TARGET_KERNEL_CONFIG += vendor/xiaomi/alioth.config
+# Kernel
+TARGET_KERNEL_CONFIG := alioth_defconfig
+BOARD_KERNEL_CMDLINE += alioth.ro_parts=modemst1,modemst2,fsg,fsc
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := alioth,aliothin
