@@ -17,6 +17,7 @@ TARGET_SCREEN_DENSITY := 440
 
 # Kernel
 TARGET_KERNEL_CONFIG := alioth_defconfig
+TARGET_KERNEL_DTB := qcom/sm8250-xiaomi-alioth.dtb
 BOARD_KERNEL_CMDLINE += alioth.ro_parts=modemst1,modemst2,fsg,fsc
 
 # Sepolicy
